@@ -11,6 +11,6 @@ class EducationController extends Controller
 
     public function index(): View
     {
-        return view('education',[]);
+        return view('education');
     }
 }

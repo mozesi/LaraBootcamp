@@ -1,8 +1,9 @@
 <div>
     <div>
-        <form wire:submit="store">
+        <form wire:submit="saveMyEducation">
 
             <input type="test" wire:model="nameOfCertificate" placeholder="Name of Certificate">
+            <div>@error('title') {{ $message }} @enderror</div>
             <input type="test" wire:model="nameOfSchoolAttended" placeholder="Name of School Attended">
             <input type="date" wire:model="yearStartedSchool" >
             <input type="date" wire:model="yearGraduatedSchool">

@@ -2,7 +2,7 @@
 
 use App\Http\Controllers\EducationController;
 use Illuminate\Support\Facades\Route;
-
+use App\Livewire\Education\Education;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome');
 
 Route::get('education',[EducationController::class, 'index']) -> middleware(['auth','verified'])->name('education');
+
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
