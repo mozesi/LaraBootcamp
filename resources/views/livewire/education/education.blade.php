@@ -1,6 +1,6 @@
 <div>
     <div>
-        <form wire:submit="store">
+        <form wire:submit="saveMyEducation">
 
             <input type="test" wire:model="nameOfCertificate" placeholder="Name of Certificate">
             <input type="test" wire:model="nameOfSchoolAttended" placeholder="Name of School Attended">

@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('education', function (Blueprint $table) {
             $table->id();
+            $table->string('school_name');
+            $table->string('certificate_name');
+            $table->date('start_date');
+            $table->date('graduation_date');
+            $table->text('study_description');
             $table->timestamps();
         });
     }
